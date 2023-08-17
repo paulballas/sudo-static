@@ -1,0 +1,26 @@
+@keyframes slideInFromRight
+  0%
+    transform: translateX(100%)
+  100%
+    transform: translateX(0)
+
+.hover
+  animation: 600ms ease-out slideInFromRight
+  position: fixed
+  top: 10%
+  left: 50%
+  opacity: 50%
+  .logo
+    width: 35%
+  .display-img,
+  .display-img-2
+    position: absolute
+    width: 60%
+  .display-img
+    animation: 600ms ease-out slideInFromRight
+    right: 20%
+    z-index: 20
+  .display-img-2
+    animation: 300ms ease-out slideInFromRight
+    right: 40%
+    z-index: 10

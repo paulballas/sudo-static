@@ -1,0 +1,256 @@
+.container
+  margin-right: auto
+  margin-left: auto
+  padding-right: 1rem
+  padding-left: 1rem
+  @media screen and (min-width: 752px)
+    padding-right: 3rem
+    padding-left: 3rem
+.container-fluid
+  padding-left: 0
+  padding-right: 0
+.row
+  box-sizing: border-box
+  display: flex
+  flex: 0 1 auto
+  flex-direction: row
+  flex-wrap: wrap
+  margin-right: -0.5rem
+  margin-left: -0.5rem
+  &.reverse
+    flex-direction: row-reverse
+  &.y-scroll
+    flex-wrap: nowrap
+    overflow-x: scroll
+
+@each $s, $size in (xs: 287px, sm: 650px, md: 752px, lg: 1216px, xl: 1967px)
+  @media screen and (min-width: $size)
+    .col-#{$s}, .col-#{$s}-1, .col-#{$s}-10, .col-#{$s}-11, .col-#{$s}-12, .col-#{$s}-2, .col-#{$s}-3, .col-#{$s}-4, .col-#{$s}-5, .col-#{$s}-6, .col-#{$s}-7, .col-#{$s}-8, .col-#{$s}-9, .col-#{$s}-offset-0, .col-#{$s}-offset-1, .col-#{$s}-offset-10, .col-#{$s}-offset-11, .col-#{$s}-offset-12, .col-#{$s}-offset-2, .col-#{$s}-offset-3, .col-#{$s}-offset-4, .col-#{$s}-offset-5, .col-#{$s}-offset-6, .col-#{$s}-offset-7, .col-#{$s}-offset-8, .col-#{$s}-offset-9
+      box-sizing: border-box
+      flex: 0 0 auto
+      padding-right: 0.5rem
+      padding-left: 0.5rem
+    .col-#{$s}
+      display: block
+      flex-grow: 1
+      flex-basis: 0
+      max-width: 100%
+    .col-#{$s}-1
+      flex-basis: 8.3%
+      max-width: 8.3%
+      display: block
+    .col-#{$s}-2
+      flex-basis: 16.6%
+      max-width: 16.6%
+      display: block
+    .col-#{$s}-3
+      flex-basis: 25%
+      max-width: 25%
+      display: block
+    .col-#{$s}-4
+      flex-basis: 33.3%
+      max-width: 33.3%
+      display: block
+    .col-#{$s}-5
+      flex-basis: 41.6%
+      max-width: 41.6%
+      display: block
+    .col-#{$s}-6
+      flex-basis: 50%
+      max-width: 50%
+      display: block
+    .col-#{$s}-7
+      flex-basis: 58%
+      max-width: 58%
+      display: block
+    .col-#{$s}-8
+      flex-basis: 66.6%
+      max-width: 66.6%
+      display: block
+    .col-#{$s}-9
+      flex-basis: 75%
+      max-width: 75%
+      display: block
+    .col-#{$s}-10
+      flex-basis: 83.3%
+      max-width: 83.3%
+      display: block
+    .col-#{$s}-11
+      flex-basis: 91.6%
+      max-width: 91.6%
+      display: block
+    .col-#{$s}-12
+      flex-basis: 100%
+      max-width: 100%
+      display: block
+    .col-#{$s}-offset-0
+      margin-left: 0
+    .col-#{$s}-offset-1
+      margin-left: 8.3%
+    .col-#{$s}-offset-2
+      margin-left: 16.6%
+    .col-#{$s}-offset-3
+      margin-left: 25%
+    .col-#{$s}-offset-4
+      margin-left: 33.3%
+    .col-#{$s}-offset-5
+      margin-left: 41.6%
+    .col-#{$s}-offset-6
+      margin-left: 50%
+    .col-#{$s}-offset-7
+      margin-left: 58.3%
+    .col-#{$s}-offset-8
+      margin-left: 66.6%
+    .col-#{$s}-offset-9
+      margin-left: 75%
+    .col-#{$s}-offset-10
+      margin-left: 83.3%
+    .col-#{$s}-offset-11
+      margin-left: 91.6%
+    .start-#{$s}
+      justify-content: flex-start
+      text-align: start
+    .center-#{$s}
+      justify-content: center
+      text-align: center
+    .end-#{$s}
+      justify-content: flex-end
+      text-align: end
+    .top-#{$s}
+      align-items: flex-start
+    .middle-#{$s}
+      align-items: center
+    .bottom-#{$s}
+      align-items: flex-end
+    .around-#{$s}
+      justify-content: space-around
+    .between-#{$s}
+      justify-content: space-between
+    .first-#{$s}
+      order: -1
+    .last-#{$s}
+      order: 1
+    .hide-#{$s}
+      display: none
+    .left-text-#{$s}
+      text-align: left
+    .center-text-#{$s}
+      text-align: center
+    .right-text-#{$s}
+      text-align: right
+
+    .m-b-0-#{$s}
+      margin-bottom: 0
+    .m-b-1-#{$s}
+      margin-bottom: 1rem
+    .m-b-2-#{$s}
+      margin-bottom: 2rem
+    .m-b-3-#{$s}
+      margin-bottom: 3rem
+    .m-b-3-#{$s}
+      margin-bottom: 3rem
+
+    .m-t-0-#{$s}
+      margin-top: 0
+    .m-t-1-#{$s}
+      margin-top: 1rem
+    .m-t-2-#{$s}
+      margin-top: 2rem
+    .m-t-3-#{$s}
+      margin-top: 3rem
+
+    .m-l-0-#{$s}
+      margin-left: 0
+    .m-l-1-#{$s}
+      margin-left: 1rem
+    .m-l-2-#{$s}
+      margin-left: 2rem
+    .m-l-3-#{$s}
+      margin-left: 3rem
+    .m-l-3-#{$s}
+      margin-left: 3rem
+
+    .m-r-0-#{$s}
+      margin-right: 0
+    .m-r-1-#{$s}
+      margin-right: 1rem
+    .m-r-2-#{$s}
+      margin-right: 2rem
+    .m-r-3-#{$s}
+      margin-right: 3rem
+
+    .p-0-#{$s}
+      padding: 0
+    .p-1-#{$s}
+      padding: 1rem
+    .p-2-#{$s}
+      padding: 2rem
+    .p-3-#{$s}
+      padding: 3rem
+    .p-4-#{$s}
+      padding: 4rem
+    .p-5-#{$s}
+      padding: 5rem
+
+    .p-l-0-#{$s}
+      padding-left: 0
+    .p-l-1-#{$s}
+      padding-left: 1rem
+    .p-l-2-#{$s}
+      padding-left: 2rem
+    .p-l-3-#{$s}
+      padding-left: 3rem
+
+    .p-r-0-#{$s}
+      padding-right: 0
+    .p-r-1-#{$s}
+      padding-right: 1rem
+    .p-r-2-#{$s}
+      padding-right: 2rem
+    .p-r-3-#{$s}
+      padding-right: 3rem
+    .p-r-4-#{$s}
+      padding-right: 4rem
+
+    .p-t-0-#{$s}
+      padding-top: 0
+    .p-t-1-#{$s}
+      padding-top: 1rem
+    .p-t-2-#{$s}
+      padding-top: 2rem
+    .p-t-3-#{$s}
+      padding-top: 3rem
+    .p-t-4-#{$s}
+      padding-top: 4rem
+    .p-t-5-#{$s}
+      padding-top: 5rem
+    .p-t-6-#{$s}
+      padding-top: 6rem
+    .p-t-7-#{$s}
+      padding-top: 7rem
+
+    .p-b-0-#{$s}
+      padding-bottom: 0
+    .p-b-1-#{$s}
+      padding-bottom: 1rem
+    .p-b-2-#{$s}
+      padding-bottom: 2rem
+    .p-b-3-#{$s}
+      padding-bottom: 3rem
+    .p-b-4-#{$s}
+      padding-bottom: 4rem
+    .p-b-5-#{$s}
+      padding-bottom: 5rem
+    .p-b-6-#{$s}
+      padding-bottom: 6rem
+    .p-b-7-#{$s}
+      padding-bottom: 7rem
+
+    .d-none-#{$s}
+      display: none
+    .d-flex-#{$s}
+      display: flex
+    .d-block-#{$s}
+      display: block
+    .d-inline-block
+      display: inline-block

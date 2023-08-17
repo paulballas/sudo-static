@@ -1,0 +1,191 @@
+@font-face
+  font-family: "ddc-compressed"
+  src: url("/build/DDC/DDCHardware-Compressed.otf")
+  font-style: normal
+
+@font-face
+  font-family: "ddc-condensed"
+  src: url("/build/DDC/DDCHardware-Condensed.otf")
+  font-style: normal
+
+@font-face
+  font-family: "ddc-regular"
+  src: url("/build/DDC/DDCHardware-Regular.otf")
+  font-style: normal
+
+@font-face
+  font-family: "lubalin"
+  src: url("/build/lubalin/Lubalin-Graph.ttf")
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: "lubalin"
+  src: url("/build/lubalin/Lubalin-Graph-Medium.ttf")
+  font-weight: 500
+  font-style: normal
+
+@font-face
+  font-family: "lubalin"
+  src: url("/build/lubalin/Lubalin-Graph-Medium-Bold.ttf")
+  font-weight: 800
+  font-style: normal
+
+@font-face
+  font-family: "lubalin"
+  src: url("/build/lubalin/Lubalin-Graph-Bold.ttf")
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: "gothic-open-shaded"
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: "rig-shaded-bold-extrude"
+  font-weight: 700
+  font-style: normal
+
+h1, h2, h3, h4, h5, p, a, b
+  &.black
+    font-weight: 900
+  &.extra-bold
+    font-weight: 800
+  &.bold
+    font-weight: 700
+  &.semi-bold
+    font-weight: 600
+  &.medium
+    font-weight: 500
+  &.regular
+    font-weight: 400
+
+.gothic
+  font-family: "gothic-open-shaded"
+.rig
+  font-family: "rig-shaded-bold-extrude"
+  font-weight: 700
+.ddc
+  font-family: "ddc-regular"
+.w-900
+  font-weight: 900
+.w-800
+  font-weight: 800
+
+h1
+  font-family: "lubalin"
+  font-size: 4rem
+  font-weight: 700
+  color: $black
+  line-height: 1.4
+  margin-bottom: 1rem
+  margin-top: 0
+  &.lg
+    font-size: 3rem
+    @media screen and (min-width: 752px)
+      font-size: 5rem
+  &.xl
+    font-size: 5rem
+    @media screen and (min-width: 752px)
+      font-size: 6rem
+
+h2
+  font-family: "lubalin"
+  font-size: 3.5rem
+  font-weight: 700
+  color: $black
+  line-height: 1.4
+  margin-bottom: 1rem
+  margin-top: 0
+
+h3
+  font-family: "lubalin"
+  font-size: 2.5rem
+  font-weight: 700
+  color: $black
+  line-height: 1.4
+  margin-bottom: 1rem
+  margin-top: 0
+  @media screen and (min-width: 752px)
+    font-size: 3rem
+
+h4
+  font-family: "lubalin"
+  font-size: 2rem
+  font-weight: 700
+  color: $black
+  line-height: 1.4
+  margin-bottom: 1rem
+  margin-top: 0
+  &.lg
+    font-size: 2.5rem
+
+h5
+  font-family: "lubalin"
+  font-size: 1.5rem
+  font-weight: 500
+  color: $black
+  line-height: 1.4
+  margin-bottom: 1rem
+  margin-top: 0
+
+h6
+  font-family: "lubalin"
+  font-size: 1rem
+  font-weight: 500
+  color: $black
+  line-height: 1.4
+  margin-bottom: 0.5rem
+  margin-top: 0
+
+p, a, span, li
+  font-family: "lubalin"
+  color: $black
+  font-size: 1.25rem
+  font-weight: 500
+  line-height: 1.5
+  margin-top: 0
+  margin-bottom: 1rem
+
+b
+  font-family: inherit
+  color: $black
+  font-weight: 700
+  line-height: inherit
+  margin-top: inherit
+  margin-bottom: inherit
+  margin-top: inherit
+
+a
+  &.a-default
+    text-decoration: none
+    font-weight: 500
+    font-size: inherit
+    &:hover
+      opacity: 0.6
+      cursor: pointer
+
+p, b, a, li, span
+  &.xs
+    font-size: 0.875rem
+  &.sm
+    font-size: 1rem
+  &.lg
+    font-size: 1.5rem
+  &.xl
+    font-size: 2rem
+  &.xxl
+    font-size: 2.25rem
+
+.type-georgia
+  font-family: Georgia
+  &--all
+    *
+      font-family: Georgia
+
+span
+  font-size: inherit
+
+.upper
+  text-transform: uppercase
