@@ -2412,6 +2412,12 @@ img.hero {
   border-radius: 1rem;
 }
 
+.review-stars {
+  height: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 nav .burger {
   color: #020202;
   background: #D9C9BA;
@@ -2695,3 +2701,5 @@ nav a.nav-logo img {
     top: 1rem;
   }
 }
+
+/*# sourceMappingURL=index.css.map */
