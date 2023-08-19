@@ -1762,50 +1762,59 @@ input[type=reset], input[type=button], input[type=submit] {
   font-family: "ddc-compressed";
   src: url("/build/DDC/DDCHardware-Compressed.otf");
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "ddc-condensed";
   src: url("/build/DDC/DDCHardware-Condensed.otf");
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "ddc-regular";
   src: url("/build/DDC/DDCHardware-Regular.otf");
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "lubalin";
   src: url("/build/lubalin/Lubalin-Graph.ttf");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "lubalin";
   src: url("/build/lubalin/Lubalin-Graph-Medium.ttf");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "lubalin";
   src: url("/build/lubalin/Lubalin-Graph-Medium-Bold.ttf");
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "lubalin";
   src: url("/build/lubalin/Lubalin-Graph-Bold.ttf");
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "gothic-open-shaded";
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "rig-shaded-bold-extrude";
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 h1.black, h2.black, h3.black, h4.black, h5.black, p.black, a.black, b.black {
   font-weight: 900;
@@ -2418,34 +2427,14 @@ img.hero {
   margin-bottom: 2rem;
 }
 
-nav .burger {
-  color: #020202;
-  background: #D9C9BA;
-  padding: 0.5rem;
-  border-radius: 100%;
-  font-size: 2rem;
-  transition: all 400ms;
+nav img.logo {
+  margin-left: auto;
+  margin-right: auto;
 }
-nav .burger:hover {
-  cursor: pointer;
-}
-nav .burger.active {
-  background: #FFC800;
-}
-nav .mobile-burger {
-  background: #00B1E6;
-}
-nav .mobile-burger a {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding: 0.75rem;
-  border-bottom: none;
-}
-nav .mobile-burger a.active, nav .mobile-burger a:hover {
-  background: none;
-  border-bottom: none;
-  color: #020202;
+@media screen and (min-width: 752px) {
+  nav img.logo {
+    margin-left: initial;
+  }
 }
 nav a {
   font-weight: 500;
@@ -2638,6 +2627,10 @@ nav a.nav-logo img {
 
 .work {
   position: relative;
+}
+.work section article img {
+  border: 1px solid #01304A;
+  border-radius: 0.25rem;
 }
 .work a.link-work {
   position: relative;
