@@ -10,8 +10,7 @@
     <meta property="og:type" content="website">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=7, minimum-scale=1">
     <meta property="og:url" content="https://www.sudodigital.com">
     <link rel="canonical" href="https://www.sudodigital.com">
@@ -20,12 +19,13 @@
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="600">
     <meta name="twitter:card" content="https://www.sudodigital.com/sudo-digi-ogimg.png">
-    <link rel="stylesheet" href="build/index.css">
+    <link rel="preload" href="build/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="build/index.css"></noscript>
     <link rel="stylesheet" href="https://use.typekit.net/vap7nmf.css">
   </head>
 
   <body>
-    <heade>
+    <header>
       <nav class="bg-2">
         <div class="container">
           <div class="row middle-xs between-xs p-b-2-xs p-b-0-md">
@@ -44,13 +44,13 @@
           </div>
         </div>
       </nav>
-    </heade>
+    </header>
 
     <section class="bg-7">
       <div class="container">
         <div class="row p-t-3-xs p-b-3-xs">
           <div class="col-md-4 col-xs-12">
-            <img class="img-default hero" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/sudo-logo-hero.svg" alt="Sudo Digital Logo Hero"/>
+            <img class="img-default hero" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/sudo-logo-hero.svg" alt="Sudo Digital Logo Hero" decoding="async" loading="lazy"/>
           </div>
           <div class="col-md-7 col-md-offset-1 col-xs-12">
             <h1 class="xl ddc left-text-md center-text-xs">Sudo Digital</h1>
@@ -68,18 +68,18 @@
     <section class="bg-3 bb-1 bt-1">
       <div class="container-fluid p-t-1-xs p-b-1-xs">
         <div class="row middle-xs around-xs p-b-1-xs">
-          <img class="img-default p-2-xs p-0-md logo-10" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/medstar.svg" alt="MedStar WISE Logo"/>
-          <img class="img-default p-2-xs p-0-md logo-10" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/hb-logo.svg" alt="Honeybadger Logo"/>
-          <img class="img-default p-2-xs p-0-md logo-9" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/fitmind-logo.svg" alt="FitMind Logo"/>
-          <img class="img-default p-2-xs p-0-md logo-7" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/pana-logo.svg" alt="Pana Logo"/>
-          <img class="img-default p-2-xs p-0-md logo-5" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/dib6.svg" alt="DIB6 Logo"/>
-          <img class="img-default p-2-xs p-0-md logo-4x align-self-center" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/mm-logo.png" alt="Mindful Mamas Logo"/>
+          <img class="img-default p-2-xs p-0-md logo-10" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/medstar.svg" alt="MedStar WISE Logo" decoding="async" loading="lazy"/>
+          <img class="img-default p-2-xs p-0-md logo-10" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/hb-logo.svg" alt="Honeybadger Logo" decoding="async" loading="lazy"/>
+          <img class="img-default p-2-xs p-0-md logo-9" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/fitmind-logo.svg" alt="FitMind Logo" decoding="async" loading="lazy"/>
+          <img class="img-default p-2-xs p-0-md logo-7" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/pana-logo.svg" alt="Pana Logo" decoding="async" loading="lazy"/>
+          <img class="img-default p-2-xs p-0-md logo-5" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/dib6.svg" alt="DIB6 Logo" decoding="async" loading="lazy"/>
+          <img class="img-default p-2-xs p-0-md logo-4x align-self-center" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/mm-logo.png" alt="Mindful Mamas Logo" decoding="async" loading="lazy"/>
         </div>
         <div class="row middle-xs around-xs">
-          <img class="img-default p-2-xs p-0-md logo-7" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/suno-logo.svg" alt="SUNO Logo"/>
-          <img class="img-default p-2-xs p-0-md logo-4" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/usac-green.svg" alt="USA Cycling Logo"/>
-          <img class="img-default p-2-xs p-0-md logo-10" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/fswb-logo.svg" alt="First Southwest Bank Logo"/>
-          <img class="img-default p-2-xs p-0-md logo-9" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/cxc-logo.png" alt="CustodyXChange Logo"/>
+          <img class="img-default p-2-xs p-0-md logo-7" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/suno-logo.svg" alt="SUNO Logo" decoding="async" loading="lazy"/>
+          <img class="img-default p-2-xs p-0-md logo-4" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/usac-green.svg" alt="USA Cycling Logo" decoding="async" loading="lazy"/>
+          <img class="img-default p-2-xs p-0-md logo-10" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/fswb-logo.svg" alt="First Southwest Bank Logo" decoding="async" loading="lazy"/>
+          <img class="img-default p-2-xs p-0-md logo-9" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/cxc-logo.png" alt="CustodyXChange Logo" decoding="async" loading="lazy"/>
         </div>
       </div>
     </section>
@@ -128,7 +128,7 @@
       <div class="container">
         <div class="row p-t-4-xs p-b-4-xs">
           <div class="col-md-7 col-xs-12">
-            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/ills.webp" class="img-default img-service" alt="Sudo Digital Illustration"/>
+            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/ills.webp" class="img-default img-service" alt="Sudo Digital Illustration" decoding="async" loading="lazy"/>
           </div>
           <div class="col-md-5 col-xs-12 center-xs left-text-xs">
             <div class="m-l-2-xs m-t-1-xs p-r-2-xs">
@@ -148,7 +148,7 @@
       <div class="container">
         <div class="row p-t-4-xs p-b-4-xs">
           <div class="col-md-7 col-xs-12">
-            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/mobile.webp" class="img-default img-service" alt="Sudo Digital Mobile UI UX Design"/>
+            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/mobile.webp" class="img-default img-service" alt="Sudo Digital Mobile UI UX Design" decoding="async" loading="lazy"/>
           </div>
           <div class="col-md-5 col-xs-12 center-xs left-text-xs">
             <div class="m-l-2-xs m-t-1-xs p-r-2-xs">
@@ -168,7 +168,7 @@
       <div class="container">
         <div class="row p-t-4-xs p-b-4-xs">
           <div class="col-md-7 col-xs-12">
-            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/brandin-v2.jpeg" class="img-default img-service" alt="Branding design"/>
+            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/brandin-v2.jpeg" class="img-default img-service" alt="Branding design" decoding="async" loading="lazy"/>
           </div>
           <div class="col-md-5 col-xs-12 center-xs left-text-xs">
             <div class="m-l-2-xs m-t-1-xs p-r-2-xs">
@@ -188,7 +188,7 @@
       <div class="container">
         <div class="row p-t-4-xs p-b-4-xs">
           <div class="col-md-7 col-xs-12">
-            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/low-code.jpeg" class="img-default img-service" alt="Low code development illustration"/>
+            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/low-code.jpeg" class="img-default img-service" alt="Low code development illustration" decoding="async" loading="lazy"/>
           </div>
           <div class="col-md-5 col-xs-12 center-xs left-text-xs">
             <div class="m-l-2-xs m-t-1-xs p-r-2-xs">
@@ -208,7 +208,7 @@
       <div class="container">
         <div class="row p-t-4-xs p-b-4-xs">
           <div class="col-md-7 col-xs-12">
-            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/logos.webp" class="img-default img-service" alt="Sudo Digital Logo Design"/>
+            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/logos.webp" class="img-default img-service" alt="Sudo Digital Logo Design" decoding="async" loading="lazy"/>
           </div>
           <div class="col-md-5 col-xs-12 center-xs left-text-xs">
             <div class="m-l-2-xs m-t-1-xs p-r-2-xs">
@@ -228,7 +228,7 @@
       <div class="container">
         <div class="row p-t-4-xs p-b-4-xs">
           <div class="col-md-7 col-xs-12">
-            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/apps.webp" class="img-default img-service" alt="Sudo Digital Logo Design"/>
+            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/apps.webp" class="img-default img-service" alt="Sudo Digital Logo Design" decoding="async" loading="lazy"/>
           </div>
           <div class="col-md-5 col-xs-12 center-xs left-text-xs">
             <div class="m-l-2-xs m-t-1-xs p-r-2-xs">
@@ -252,28 +252,28 @@
             <h4 class="ddc">Reviews Rule Everything Around Me</h4>
           </div>
           <div class="col-md-5 col-xs-12">
-            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/fitmind-store.webp" class="img-default" alt="FitMind App Store"/>
+            <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/fitmind-store.webp" class="img-default" alt="FitMind App Store" decoding="async" loading="lazy"/>
           </div>
         </div>
         <div class="row center-xs p-t-1-xs p-b-3-xs">
           <div class="col-md-4 col-sm-12">
             <p class="color-yellow lg">
             </p>
-            <img class="img-default review-stars" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/star-group.svg" alt="star group icon" />
+            <img class="img-default review-stars" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/star-group.svg" alt="star group icon" decoding="async" loading="lazy"/>
             <h5 class="m-b-0-xs ddc color-9">Tried em all, this is the best</h5>
             <p class="type-georgia">"I’ve tried every meditation app under the sun and have always ended up bored or put off."</p>
           </div>
           <div class="col-md-4 col-sm-12">
             <p class="color-6 lg">
             </p>
-            <img class="img-default review-stars" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/star-group.svg" alt="star group icon" />
+            <img class="img-default review-stars" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/star-group.svg" alt="star group icon" decoding="async" loading="lazy"/>
             <h5 class="m-b-0-xs ddc color-9">This is the app you want</h5>
             <p class="type-georgia">"I have tried to practice meditation off and on for 10 years. This is the first app that stuck."</p>
           </div>
           <div class="col-md-4 col-sm-12">
             <p class="color-yellow lg">
             </p>
-            <img class="img-default review-stars" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/star-group.svg" alt="star group icon" />
+            <img class="img-default review-stars" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/star-group.svg" alt="star group icon" decoding="async" loading="lazy"/>
             <h5 class="m-b-0-xs ddc color-9">100% recommend - AMAZING app</h5>
             <p class="type-georgia">"FitMind a more simplistic app than calm or others I've tried, but it has the most the R&D."</p>
           </div>
@@ -328,7 +328,7 @@
     <section class="container-fluid">
       <div class="row">
         <div class="col-xs-12">
-          <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/divider-ills-sm.jpeg" class="img-default" alt="Collection of profile illustrations by paul ballas"/>
+          <img src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/divider-ills-sm.jpeg" class="img-default" alt="Collection of profile illustrations by paul ballas" decoding="async" loading="lazy"/>
         </div>
       </div>
     </section>
@@ -379,21 +379,20 @@
       </div>
     </section>
 
-    <footer class="bg-7">
+    <footer class="bg-5">
       <div class="container">
-        <div class="row center-xs align-self-center p-t-2-xs p-b-1-xs">
-          <div class="col-md-2">
-            <img class="img-default hero" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/sudo-logo-hero.svg" alt="Sudo Digital Logo"/>
-          </div>
-        </div>
-        <div class="row around-xs p-t-1-xs p-b-4-xs">
-          <div class="col">
+        <div class="row center-xs middle-xs align-self-center p-t-2-xs p-b-1-xs">
+          <div class="col-md-5 col-xs-12">
             <a class="a-default lg" href="https://www.linkedin.com/company/sudodigital/" target="_blank">LinkedIn</a>
           </div>
-          <div class="col">
+          <div class="col-md-2 col-xs-12">
+            <img class="img-default hero" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/sudo-logo-hero.svg" alt="Sudo Digital Logo"/>
+          </div>
+          <div class="col-md-5 col-xs-12">
             <a class="a-default lg" href="https://dribbble.com/paulballas" target="_blank">Dribbble</a>
           </div>
         </div>
+      </div>
       </div>
     </footer>
 

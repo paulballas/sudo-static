@@ -10,23 +10,46 @@
   <meta property="og:type" content="website">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=7, minimum-scale=1">
-  <meta property="og:url" content="https://www.sudodigital.com">
-  <link rel="canonical" href="https://www.sudodigital.com">
+  <meta property="og:url" content="https://www.sudodigital.com/about">
+  <link rel="canonical" href="https://www.sudodigital.com/about">
   <meta property="og:image" content="https://www.sudodigital.com/sudo-digi-ogimg.png">
   <meta property="og:image:alt" content="Logo for Sudo Digital">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="600">
   <meta name="twitter:card" content="https://www.sudodigital.com/sudo-digi-ogimg.png">
-  <link rel="stylesheet" href="build/index.css">
-  <link rel="stylesheet" href="https://use.typekit.net/vap7nmf.css">
+  <link rel="preload" href="build/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://use.typekit.net/vap7nmf.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="build/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vap7nmf.css">
+  </noscript>
 </head>
 
 <body>
-  <div class="about bg-7">
 
+  <header>
+    <nav class="bg-2">
+      <div class="container">
+        <div class="row middle-xs between-xs p-b-2-xs p-b-0-md">
+          <div class="col-xs-12 col-md-1 p-t-1-xs p-b-1-xs align-self-center">
+            <a class="a-default nav-logo" href="/">
+              <img class="img-default animate-jello logo" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/nav/sudo-logo-sans-black.svg" alt="Sudo Digital Logo"/>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-xs-12 right-text-md center-text-xs">
+            <a href="/" aria-label="navigation link to Home">Home</a>
+            <a href="/about" aria-label="navigation link to About">About</a>
+            <a href="/work" aria-label="navigation link to Work">Work</a>
+            <a href="/blog" aria-label="navigation link to Blog">Blog</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="about bg-7">
     <div class="container">
       <div class="row p-t-3-xs m-b-3-xs center-xs middle-xs">
         <div class="col-md-2 col-xs-6">

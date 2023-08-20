@@ -10,18 +10,20 @@
   <meta property="og:type" content="website">
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=7, minimum-scale=1">
-  <meta property="og:url" content="https://www.sudodigital.com">
-  <link rel="canonical" href="https://www.sudodigital.com">
+  <meta property="og:url" content="https://www.sudodigital.com/work">
+  <link rel="canonical" href="https://www.sudodigital.com/work">
   <meta property="og:image" content="https://www.sudodigital.com/sudo-digi-ogimg.png">
   <meta property="og:image:alt" content="Logo for Sudo Digital">
   <meta property="og:image:width" content="600">
   <meta property="og:image:height" content="600">
   <meta name="twitter:card" content="https://www.sudodigital.com/sudo-digi-ogimg.png">
-  <link rel="stylesheet" href="build/index.css">
-  <link rel="stylesheet" href="https://use.typekit.net/vap7nmf.css">
+  <link rel="preload" href="build/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://use.typekit.net/vap7nmf.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="build/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vap7nmf.css">
+  </noscript>
 </head>
 
 <body>
@@ -59,7 +61,7 @@
 
       <article class="col-md-6 col-xs-12 m-b-2-xs">
         <a class="a-default" href="/work/globe-thrivers" aria-label="Globe Thrivers Project Page">
-          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-thrivers.jpg" alt="Globe Thrivers hero">
+          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-thrivers.jpg" alt="Globe Thrivers hero" decoding="async" loading="lazy">
           <p class="ddc m-b-0 m-t-1-xs color-link">Globe Thrivers</p>
           <p class="type-georgia">Consumer mobile app that recommends exclusive benefits from leading hospitality brands creating an enhanced planning and travel experience.</p>
         </a>
@@ -67,7 +69,7 @@
 
       <article class="col-md-6 col-xs-12 m-b-2-xs">
         <a class="a-default" href="/work/fitmind" aria-label="FitMind Project Page">
-          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-fitmind.jpeg" alt="FitMind hero">
+          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-fitmind.jpeg" alt="FitMind hero" decoding="async" loading="lazy">
           <p class="ddc m-b-0 m-t-1-xs color-link">FitMind</p>
           <p class="type-georgia">A meditation mobile app with over 500K downloads and 20K members, and the #1 ranked consumer meditation app on CNET.</p>
         </a>
@@ -75,7 +77,7 @@
 
       <article class="col-md-6 col-xs-12 m-b-2-xs">
         <a class="a-default" href="/work/oracle" aria-label="Oracle Project Page">
-          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-oracle.jpg" alt="Oracle hero">
+          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-oracle.jpg" alt="Oracle hero" decoding="async" loading="lazy">
           <p class="ddc m-b-0 m-t-1-xs color-link">Oracle</p>
           <p class="type-georgia">Managed a team of designers at Oracle, creating products in the advertising (AdTech) industry.</p>
         </a>
@@ -83,7 +85,7 @@
 
       <article class="col-md-6 col-xs-12 m-b-2-xs">
         <a class="a-default" href="/work/usa-cycling" aria-label="USA Cycling Project Page">
-          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-usac.jpeg" alt="USA Cycling hero">
+          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-usac.jpeg" alt="USA Cycling hero" decoding="async" loading="lazy">
           <p class="ddc m-b-0 m-t-1-xs color-link">USA Cycling</p>
           <p class="type-georgia">Design system for USA Cycling's primary website and thousand of additional race microsites</p>
         </a>
@@ -91,7 +93,7 @@
 
       <article class="col-md-6 col-xs-12 m-b-2-xs">
         <a class="a-default" href="/work/elegy" aria-label="Elegy Project Page">
-          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-elegy.jpg" alt="Elegy hero">
+          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-elegy.jpg" alt="Elegy hero" decoding="async" loading="lazy">
           <p class="ddc m-b-0 m-t-1-xs color-link">Elegy</p>
           <p class="type-georgia">Responsive web application for the Funeral Home industry sold has a B2B software as a service (SaaS) platform.</p>
         </a>
@@ -99,23 +101,15 @@
 
       <article class="col-md-6 col-xs-12 m-b-2-xs">
         <a class="a-default" href="/work/pana" aria-label="Pana Project Page">
-          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-pana.jpg" alt="Pana hero">
+          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-pana.jpg" alt="Pana hero" decoding="async" loading="lazy">
           <p class="ddc m-b-0 m-t-1-xs color-link">Pana</p>
           <p class="type-georgia">Chat-based mobile app in the travel industry, helping members plan, manage, and book their travel.</p>
         </a>
       </article>
 
       <article class="col-md-6 col-xs-12 m-b-2-xs">
-        <a class="a-default" href="/work/pana" aria-label="Flywheel Publishing Project Page">
-          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-sudo.jpeg" alt="Flywheel Publishing hero">
-          <p class="ddc m-b-0 m-t-1-xs color-link">Flywheel Publishing</p>
-          <p class="type-georgia">Brand, logo design, and front-end development for multiple blogs owned by a content publisher.</p>
-        </a>
-      </article>
-
-      <article class="col-md-6 col-xs-12 m-b-2-xs">
-        <a class="a-default" href="/work/pana" aria-label="Sudo Brand Project Page">
-          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-sudo.jpeg" alt="Sudo Brand hero">
+        <a class="a-default" href="/work/sudo-brand" aria-label="Sudo Brand Project Page">
+          <img class="img-default" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/work/hero-sudo.jpeg" alt="Sudo Brand hero" decoding="async" loading="lazy">
           <p class="ddc m-b-0 m-t-1-xs color-link">Sudo Brand</p>
           <p class="type-georgia">Brand design for my agency—color palette, logo design, and typography.</p>
         </a>
@@ -128,18 +122,17 @@
 
   <footer class="bg-5">
     <div class="container">
-      <div class="row center-xs align-self-center p-t-2-xs p-b-1-xs">
-        <div class="col-md-2">
-          <img class="img-default hero" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/sudo-logo-hero.svg" alt="Sudo Digital Logo"/>
-        </div>
-      </div>
-      <div class="row around-xs p-t-1-xs p-b-4-xs">
-        <div class="col">
+      <div class="row center-xs middle-xs align-self-center p-t-2-xs p-b-1-xs">
+        <div class="col-md-5 col-xs-12">
           <a class="a-default lg" href="https://www.linkedin.com/company/sudodigital/" target="_blank">LinkedIn</a>
         </div>
-        <div class="col">
+        <div class="col-md-2 col-xs-12">
+          <img class="img-default hero" src="https://sudodigi-www.s3.us-east-2.amazonaws.com/home/sudo-logo-hero.svg" alt="Sudo Digital Logo"/>
+        </div>
+        <div class="col-md-5 col-xs-12">
           <a class="a-default lg" href="https://dribbble.com/paulballas" target="_blank">Dribbble</a>
         </div>
+      </div>
       </div>
     </div>
   </footer>
